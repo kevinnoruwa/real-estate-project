@@ -1,0 +1,52 @@
+// grid
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.container:after ,
+    .row:after {
+        display: table;
+        content: "";
+        clear: both;      
+    }
+
+[class ='col-'] {
+
+}
+
+@media only screen and (min-width: 0px) {
+    .container {
+        max-width: 1200px;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 1200px;
+        width: 95%;
+
+    }
+
+}
+
+@media only screen and (min-width: 1008px) {
+    .container {
+        max-width: 1200px;
+        width: 95%;
+
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+    .container {
+        max-width: 1200px;
+        width: 95%;
+
+    }
+
+}

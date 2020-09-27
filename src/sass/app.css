@@ -31,8 +31,13 @@ header {
   color: white;
 }
 
+header .logo a {
+  font-size: 1.6rem;
+  color: white;
+}
+
 header .logo .fa {
-  font-size: 20px;
+  font-size: 1.6rem;
 }
 
 header nav {
@@ -68,30 +73,45 @@ a.register-btn {
 
 #filter {
   display: inline-block;
+  position: relative;
   background: #FAF7F5;
   max-width: 300px;
+  height: 1304px;
   float: left;
   width: 30%;
 }
 
 #filter .inside {
+  position: absolute;
   padding: 20px;
+  top: 20px;
+}
+
+#filter .inside .label {
+  font-size: 1.3rem;
+  margin: 0 0 5px;
+  color: #ADA8AA;
 }
 
 #filter h4 {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
   text-transform: capitalize;
-  font-weight: 400;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
   margin: 0 0 25px;
-  font-size: 1rem;
 }
 
 #filter select {
+  border: 1px solid rgba(0, 0, 0, 0.2);
   background: transparent;
-  margin: 0 0 25px;
   border-radius: 3px;
+  margin: 0 0 25px;
   color: #1b1b1b;
   font-size: 16px;
   display: block;
+  outline: none;
   padding: 4px;
   width: 100%;
 }
@@ -108,22 +128,40 @@ a.register-btn {
   width: 45%;
 }
 
+#filter label span {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
 .filters .title {
+  font-size: 1.3rem;
   margin: 0 0 1rem;
-  font-size: 0.9rem;
   color: #ADA8AA;
   display: block;
 }
 
 .extras label {
-  border-bottom: 0.1px #ADA8AA solid;
-  display: block;
   margin: 0 0 25px;
+  display: block;
 }
 
 .extras label input[type="checkbox"] {
-  float: right;
   display: block;
+  float: right;
+}
+
+#filter .filter-image-container {
+  position: absolute;
+  bottom: 0;
+}
+
+#filter .filter-image-container img {
+  width: 100%;
+}
+
+.border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 0 50px;
 }
 
 #listings {
@@ -148,9 +186,9 @@ a.register-btn {
 #listings .search-area input[type="text"] {
   border-bottom: 2px solid #FAF7F5 !important;
   background: transparent;
+  color: #D1CBCD;
   margin: 0 0 20px;
   font-size: 2rem;
-  color: #D1CBCD;
   outline: none;
   border: none;
   width: 70%;
@@ -171,10 +209,10 @@ a.register-btn {
 }
 
 .sort-options select {
-  vertical-align: top;
   border: 1px solid #D1CBCD;
-  border-radius: 3px;
   display: inline-block;
+  vertical-align: top;
+  border-radius: 3px;
   margin-right: 15px;
   font-size: .9rem;
   font-weight: 300;
@@ -187,8 +225,8 @@ a.register-btn {
 }
 
 .sort-options .view .fa {
-  font-size: 1.5rem;
   margin-right: 15px;
+  font-size: 1.5rem;
 }
 
 .listings-results {
@@ -198,10 +236,10 @@ a.register-btn {
 
 .listings-results .address {
   text-shadow: 1px 0px 3px black;
-  font-size: 1.2rem;
   -webkit-transition: all ease-in-out .5s;
   transition: all ease-in-out .5s;
   position: absolute;
+  font-size: 1.2rem;
   bottom: 20px;
   opacity: 1;
 }
@@ -214,9 +252,9 @@ a.register-btn {
 }
 
 .listing-img {
-  background-size: cover !important;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
+  background-size: cover !important;
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
   -webkit-background-size: cover;
@@ -241,8 +279,8 @@ a.register-btn {
 .details {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(56%, rgba(116, 182, 180, 0.8)), to(rgba(116, 182, 180, 0.9)));
   background-image: linear-gradient(90deg, rgba(116, 182, 180, 0.8) 56%, rgba(116, 182, 180, 0.9) 100%);
-  -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
   -moz-border-radius-topright: 5px;
   -webkit-transition: all ease-in-out .5s;
   transition: all ease-in-out .5s;
@@ -320,20 +358,24 @@ a.register-btn {
 }
 
 .bottom-info {
-  padding: 15px;
   color: #D1CBCD;
+  padding: 15px;
 }
 
 .bottom-info .price {
   margin: 0 0 10px;
-  color: #74B6B4;
   font-size: 1rem;
   display: block;
+  color: #74B6B4;
+}
+
+.bottom-info .price .month-label {
+  color: #ADA8AA;
 }
 
 .bottom-info .location {
-  display: block;
   font-size: 1.2rem;
+  display: block;
 }
 
 .bottom-info .location .fa {
@@ -341,10 +383,17 @@ a.register-btn {
 }
 
 .col-md-3 {
-  padding: 15px;
   display: inline-block;
   vertical-align: top;
+  padding: 15px;
   width: 33%;
+}
+
+.col-lg-6 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px;
+  width: 50%;
 }
 
 .pagination {
@@ -380,13 +429,175 @@ a.register-btn {
 
 .pagination .pages li:first-child {
   background: white !important;
-  color: #ADA8AA !important;
   border-radius: 50px !important;
+  color: #ADA8AA !important;
 }
 
 .pagination .pages li:last-child {
   background: white !important;
-  color: #ADA8AA !important;
   border-radius: 50px !important;
+  color: #ADA8AA !important;
+}
+
+#modal-section {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  opacity: 0;
+}
+
+#modal-section.active {
+  background: rgba(0, 0, 0, 0.75);
+  visibility: visible;
+  opacity: 1;
+}
+
+#modal-section .modal {
+  background: white;
+  position: relative;
+  border-radius: 5px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+#modal-section .modal .close-modal {
+  position: relative;
+  text-align: center;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 30px;
+  width: 30px;
+}
+
+#modal-section .modal .close-modal .fa {
+  position: absolute;
+  font-size: 1.2rem;
+  color: white;
+  left: 8px;
+  top: 5px;
+}
+
+.modal-grid {
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.modal .modal-grid .image-container .image {
+  background: center center no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.modal .modal-grid .info .info-line span {
+  font-weight: 300;
+  margin: 5px 0 0;
+  display: block;
+}
+
+.modal .modal-grid .info .info-line h2 {
+  font-weight: 800;
+  color: #74B6B4;
+}
+
+.modal .modal-grid .info p {
+  margin: 10px 0 0;
+}
+
+footer {
+  padding: 60px 50px 0px 50px;
+  background: #74B6B4;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+footer .footer-info {
+  text-align: center;
+  font-style: italic;
+  font-size: .8rem;
+}
+
+footer .footer-info .info-1 {
+  margin: 0 0 20px;
+}
+
+footer .footer-info .info-2 {
+  margin: 0 0 20px;
+}
+
+footer .play-stores {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 30px;
+}
+
+footer .play-stores .play-stores-grid {
+  -ms-grid-columns: 150px 150px;
+      grid-template-columns: 150px 150px;
+  display: -ms-grid;
+  display: grid;
+}
+
+footer .play-stores .play-stores-grid .store-logo-1 img {
+  width: 150px;
+}
+
+footer .play-stores .play-stores-grid .store-logo-2 img {
+  width: 150px;
+}
+
+footer .extra-info {
+  text-align: center;
+  position: relative;
+  top: 90px;
+}
+
+footer .extra-info div {
+  text-transform: capitalize;
+  display: inline-block;
+  margin: 0 auto;
+  float: left;
+  width: 33.3%;
+}
+
+footer .extra-info div .l {
+  font-size: 20px;
+  padding: 0 0 0 5px;
+}
+
+footer .footer-image {
+  position: relative;
+  bottom: -93px;
+}
+
+footer .footer-image img {
+  display: inline-block;
+  width: 50%;
+  float: left;
 }
 /*# sourceMappingURL=app.css.map */
