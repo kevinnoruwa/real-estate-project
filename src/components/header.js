@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import  {openMenu} from '../actions/allActions.js'
 
 
 class Header extends React.Component {
@@ -25,10 +27,28 @@ class Header extends React.Component {
                 <a href="localhost:300">Log in</a>
                 <a href="localhost:300" className="register-btn">Register</a>
             </nav>
+          <div onClick={this.props.openMenu} className='menu-logo'>
+            <i className='fa fa-bars' aria-hidden='true'></i>
+          </div>
         </header>
       )
     }
   
   }
 
-  export  default Header
+
+  
+
+  const mapStateToProps = (state) => {
+    
+    return state
+  }
+  
+
+
+  export  default connect(mapStateToProps, {
+    openMenu
+
+  })(Header)
+
+  

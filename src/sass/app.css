@@ -55,6 +55,18 @@ header nav a:hover {
   color: #ff718e;
 }
 
+header .menu-logo {
+  float: right;
+  padding: 10px;
+  position: relative;
+  top: -2;
+  display: none;
+}
+
+header .menu-logo .fa {
+  font-size: 1.2rem;
+}
+
 .logo {
   float: left;
 }
@@ -68,6 +80,7 @@ a.register-btn {
 }
 
 #content-area {
+  position: relative;
   width: 100%;
 }
 
@@ -87,13 +100,7 @@ a.register-btn {
   top: 20px;
 }
 
-#filter .inside .label {
-  font-size: 1.3rem;
-  margin: 0 0 5px;
-  color: #ADA8AA;
-}
-
-#filter h4 {
+#filter .inside h4 {
   border-bottom: solid 1px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.5);
   text-transform: capitalize;
@@ -103,7 +110,7 @@ a.register-btn {
   margin: 0 0 25px;
 }
 
-#filter select {
+#filter .inside select {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: transparent;
   border-radius: 3px;
@@ -116,7 +123,13 @@ a.register-btn {
   width: 100%;
 }
 
-#filter input[type="text"] {
+#filter .inside .label {
+  font-size: 1.3rem;
+  margin: 0 0 5px;
+  color: #ADA8AA;
+}
+
+#filter .inside input[type="text"] {
   display: inline-block;
   margin-bottom: 1rem;
   margin-right: 2.5%;
@@ -128,9 +141,21 @@ a.register-btn {
   width: 45%;
 }
 
-#filter label span {
-  font-size: 1.1rem;
+#filter .inside .label-container .label-name {
+  display: inline-block;
   font-weight: 300;
+  font-size: 1.1rem;
+  padding: 20px 0;
+  width: 80%;
+  float: left;
+}
+
+#filter .inside .label-container input[type='checkbox'] {
+  position: relative;
+  top: 20px;
+  width: 20%;
+  display: inline-block;
+  float: right;
 }
 
 .filters .title {
@@ -159,7 +184,7 @@ a.register-btn {
   width: 100%;
 }
 
-.border {
+.border-design {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 0 50px;
 }
@@ -599,5 +624,321 @@ footer .footer-image img {
   display: inline-block;
   width: 50%;
   float: left;
+}
+
+#mobil-nav {
+  overflow: hidden;
+  background: #74B6B4;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(68, 68, 68, 0.6);
+  box-shadow: 0px 0px 0px 0px rgba(68, 68, 68, 0.6);
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#mobil-nav .inside {
+  padding: 10px;
+}
+
+#mobil-nav .inside .header-title {
+  color: #fff;
+  font-size: 1.3rem;
+  min-width: 100%;
+  background: #ff718e;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+#mobil-nav .inside .close-nav {
+  display: inline-block;
+  position: fixed;
+  padding: 15px;
+  right: 0;
+  top: -4px;
+  background: red;
+  height: 49px;
+  width: 45px;
+  cursor: pointer;
+}
+
+#mobil-nav .inside .close-nav .fa {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#mobil-nav .inside nav div {
+  font-size: 1.2rem;
+  border-bottom: solid 1px #D1CBCD;
+  padding: 65px 0 50px 0;
+}
+
+#mobil-nav .inside nav div a {
+  padding: 10px;
+  color: #fff;
+}
+
+#mobil-nav .inside nav div .fa {
+  color: #D1CBCD;
+}
+
+#mobil-nav .inside .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+
+#mobil-nav .inside .logo .fa {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#mobil-nav.active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: -1px 0px 5px 0px rgba(68, 68, 68, 0.6);
+  box-shadow: -1px 0px 5px 0px rgba(68, 68, 68, 0.6);
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 1023px) {
+  header .logo a {
+    font-size: 1.4rem;
+  }
+  #filter {
+    width: 40%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+  }
+  #listings {
+    width: 60%;
+    float: right;
+  }
+  #listings .col-md-3 {
+    width: 50%;
+  }
+  #listings .pagination {
+    width: 100%;
+  }
+  #listings .pagination .pages li {
+    padding: 20px 25px;
+  }
+  footer {
+    font-size: .8rem;
+  }
+  footer .play-stores {
+    top: 2px;
+  }
+  footer .play-stores .play-stores-grid {
+    -ms-grid-columns: 120px 120px;
+        grid-template-columns: 120px 120px;
+  }
+  footer .play-stores .play-stores-grid .store-logo-1 img {
+    width: 120px;
+  }
+  footer .play-stores .play-stores-grid .store-logo-2 img {
+    width: 120px;
+  }
+  footer .extra-info {
+    top: 38px;
+  }
+  footer .extra-info div {
+    font-size: .8rem;
+  }
+  footer .extra-info div .l {
+    font-size: .9rem;
+  }
+  footer .footer-image {
+    bottom: -40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header .logo a {
+    font-size: 1.3rem;
+  }
+  header nav {
+    display: none;
+  }
+  header .menu-logo {
+    display: block;
+  }
+  #filter {
+    width: 40%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+  }
+  #filter .inside h4 {
+    font-size: 1.2rem;
+  }
+  #filter .inside .label {
+    font-size: 1.1rem;
+  }
+  #filter .inside select {
+    padding: 7px;
+  }
+  #filter .inside .label-container .label-name {
+    font-size: 1rem;
+  }
+  #filter .title {
+    font-size: 1.1rem;
+  }
+  #listings {
+    float: right;
+    width: 60%;
+  }
+  #listings .search-area input[type="text"] {
+    width: 70%;
+  }
+  #listings .fa {
+    font-size: 1.2rem;
+  }
+  #listings .sortby-area .results {
+    float: none;
+    font-size: .9rem;
+    color: #ADA8AA;
+    text-align: center;
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  #listings .sort-options {
+    float: none;
+    margin: 7px 0 0 0;
+    display: block;
+    text-align: center;
+  }
+  #listings .sort-options .fa {
+    display: none;
+  }
+  #listings .sort-options select {
+    padding: 13px 13px;
+  }
+  #listings .col-md-3 {
+    display: block;
+    vertical-align: top;
+    padding: 15px;
+    width: 100%;
+  }
+  #listings .pagination {
+    width: 100%;
+    border-radius: none !important;
+  }
+  #listings .pagination .pages {
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: none;
+    border-radius: none !important;
+  }
+  #listings .pagination .pages li {
+    padding: 8px 13px;
+  }
+  #listings .pagination .pages .active {
+    background-color: transparent;
+    color: #ADA8AA;
+    border-bottom: solid 2px #ff718e;
+  }
+  #listings .pagination .pages li:last-child {
+    display: none !important;
+  }
+  #listings .pagination .pages li:first-child {
+    display: none !important;
+  }
+  #modal-section .modal {
+    background: #FAF7F5;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #modal-section .modal .modal-grid {
+    height: 100%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  #modal-section .modal .modal-grid .image-container .image {
+    height: 100%;
+  }
+  #modal-section .modal .close-modal {
+    position: absolute;
+    bottom: 75px;
+    left: 48%;
+    height: 50px;
+    width: 50px;
+  }
+  #modal-section .modal .close-modal .fa {
+    font-size: 1.9rem;
+    top: 10px;
+    right: 8px;
+  }
+  #mobil-nav .inside .logo {
+    position: relative;
+    padding: 50px 0 0 0;
+    top: -22px;
+  }
+  #mobil-nav .inside .logo .fa {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: .7rem;
+  }
+  footer .play-stores {
+    top: 2px;
+  }
+  footer .play-stores .play-stores-grid {
+    -ms-grid-columns: 100px 100px;
+        grid-template-columns: 100px 100px;
+  }
+  footer .play-stores .play-stores-grid .store-logo-1 img {
+    width: 100px;
+  }
+  footer .play-stores .play-stores-grid .store-logo-2 img {
+    width: 100px;
+  }
+  footer .extra-info {
+    top: 20px;
+  }
+  footer .extra-info div {
+    font-size: .5rem;
+  }
+  footer .extra-info div .l {
+    font-size: .8rem;
+  }
+  footer .footer-image {
+    bottom: -20px;
+  }
 }
 /*# sourceMappingURL=app.css.map */

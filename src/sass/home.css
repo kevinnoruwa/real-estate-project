@@ -61,6 +61,18 @@ header nav a:hover {
   color: #ff718e;
 }
 
+header .menu-logo {
+  float: right;
+  padding: 10px;
+  position: relative;
+  top: -2;
+  display: none;
+}
+
+header .menu-logo .fa {
+  font-size: 1.2rem;
+}
+
 .logo {
   float: left;
 }
@@ -166,6 +178,103 @@ a.register-btn {
   float: left;
 }
 
+#mobil-nav {
+  overflow: hidden;
+  background: #74B6B4;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(68, 68, 68, 0.6);
+  box-shadow: 0px 0px 0px 0px rgba(68, 68, 68, 0.6);
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#mobil-nav .inside {
+  padding: 10px;
+}
+
+#mobil-nav .inside .header-title {
+  color: #fff;
+  font-size: 1.3rem;
+  min-width: 100%;
+  background: #ff718e;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+#mobil-nav .inside .close-nav {
+  display: inline-block;
+  position: fixed;
+  padding: 15px;
+  right: 0;
+  top: 1px;
+  background: red;
+  height: 49px;
+  width: 45px;
+  cursor: pointer;
+}
+
+#mobil-nav .inside .close-nav .fa {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#mobil-nav .inside nav div {
+  font-size: 1.2rem;
+  border-bottom: solid 1px #D1CBCD;
+  padding: 65px 0 50px 0;
+}
+
+#mobil-nav .inside nav div a {
+  padding: 10px;
+  color: #fff;
+}
+
+#mobil-nav .inside nav div .fa {
+  color: #D1CBCD;
+}
+
+#mobil-nav .inside .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+
+#mobil-nav .inside .logo .fa {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#mobil-nav.active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: -1px 0px 5px 0px rgba(68, 68, 68, 0.6);
+  box-shadow: -1px 0px 5px 0px rgba(68, 68, 68, 0.6);
+  opacity: 1;
+  visibility: visible;
+}
+
 footer {
   padding: 60px 50px 0px 50px;
   background: #74B6B4;
@@ -242,5 +351,103 @@ footer .footer-image img {
   display: inline-block;
   width: 50%;
   float: left;
+}
+
+@media only screen and (max-width: 1023px) {
+  header .logo a {
+    font-size: 1.4rem;
+  }
+  #planning-section .col {
+    width: 50%;
+  }
+  #planning-section .planning-card {
+    width: 90%;
+  }
+  footer {
+    font-size: .8rem;
+  }
+  footer .play-stores {
+    top: 2px;
+  }
+  footer .play-stores .play-stores-grid {
+    -ms-grid-columns: 120px 120px;
+        grid-template-columns: 120px 120px;
+  }
+  footer .play-stores .play-stores-grid .store-logo-1 img {
+    width: 120px;
+  }
+  footer .play-stores .play-stores-grid .store-logo-2 img {
+    width: 120px;
+  }
+  footer .extra-info {
+    top: 38px;
+  }
+  footer .extra-info div {
+    font-size: .8rem;
+  }
+  footer .extra-info div .l {
+    font-size: .9rem;
+  }
+  footer .footer-image {
+    bottom: -40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header .logo a {
+    font-size: 1.3rem;
+  }
+  header nav {
+    display: none;
+  }
+  header .menu-logo {
+    display: block;
+  }
+  #planning-section .col {
+    display: block;
+    width: 100%;
+    float: none;
+    margin: 0 0 20px 0;
+  }
+  #planning-section .planning-card {
+    width: 90%;
+    height: 550px;
+  }
+  #mobil-nav .inside .logo {
+    position: relative;
+    padding: 50px 0 0 0;
+    top: -22px;
+  }
+  #mobil-nav .inside .logo .fa {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: .7rem;
+  }
+  footer .play-stores {
+    top: 2px;
+  }
+  footer .play-stores .play-stores-grid {
+    -ms-grid-columns: 100px 100px;
+        grid-template-columns: 100px 100px;
+  }
+  footer .play-stores .play-stores-grid .store-logo-1 img {
+    width: 100px;
+  }
+  footer .play-stores .play-stores-grid .store-logo-2 img {
+    width: 100px;
+  }
+  footer .extra-info {
+    top: 20px;
+  }
+  footer .extra-info div {
+    font-size: .5rem;
+  }
+  footer .extra-info div .l {
+    font-size: .8rem;
+  }
+  footer .footer-image {
+    bottom: -20px;
+  }
 }
 /*# sourceMappingURL=home.css.map */

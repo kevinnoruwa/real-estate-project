@@ -58,6 +58,17 @@ header {
             }
         }
     }
+    .menu-logo {
+        float: right;
+        padding: 10px;
+        position: relative;
+        top: -2;
+        display: none;
+        .fa {
+            font-size: 1.2rem;
+           
+        }
+    }
 }
 
 .logo {
@@ -201,7 +212,121 @@ a.register-btn {
     width: 50%;
     float: left;
 }
+// mobil nav 
 
+
+#mobil-nav {
+    overflow: hidden;
+    background: $green;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    right:0;
+    top: 0;
+    bottom: 0;
+    left:0;
+    transition: all .5s ease-in-out;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(68,68,68,0.6);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(68,68,68,0.6);
+    box-shadow: 0px 0px 0px 0px rgba(68,68,68,0.6);
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    .inside {
+        padding: 10px;
+
+        .header-title {
+            color: #fff;
+            font-size: 1.3rem;
+            min-width: 100%;
+            background: $pink;
+            padding: 10px;
+            position: fixed;
+            top:0;
+            right: 0;
+            text-align: center;
+            span {
+              
+            }
+            
+
+        }
+
+        .close-nav {
+           display: inline-block;
+           position: fixed;
+           padding: 15px;
+           right: 0;
+           top: 1px;
+           background: red;
+           height: 49px;
+           width: 45px;
+           cursor: pointer;
+          
+           
+
+           .fa {
+               color: #fff;
+               font-size: 1.2rem;
+               
+             
+
+               
+
+           }
+
+        
+        }
+        nav {
+            div {
+                font-size: 1.2rem;
+                border-bottom: solid 1px $lightgrey;
+                padding: 65px 0 50px 0;
+
+                a {
+                
+                    padding: 10px;
+                    color: #fff;
+                }
+
+                .fa {
+                    color: $lightgrey
+                }
+
+            }
+        
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 50px 0 0 0;
+           
+            
+            .fa {
+               
+                color: #fff;
+                font-size: 3rem;
+                
+            }
+        }
+      
+    }
+
+}
+
+#mobil-nav.active {
+    transform: translate3d(0, 0, 0);
+     -webkit-box-shadow: -1px 0px 5px 0px rgba(68,68,68,0.6);
+    -moz-box-shadow: -1px 0px 5px 0px rgba(68,68,68,0.6);
+    box-shadow: -1px 0px 5px 0px rgba(68,68,68,0.6);
+    
+    opacity: 1;
+    visibility: visible;
+
+}
 
 /////// footer
 
@@ -306,3 +431,188 @@ footer {
 
  
 }
+
+
+
+
+////////// MEDIA QUEIRES 
+@media only screen and (max-width: 1023px) {
+
+    /// //////////////header 
+
+    header {
+
+       .logo a {
+           font-size: 1.4rem;
+       }   
+
+   }
+
+      // planning section 
+#planning-section {
+
+    .col {
+        width:50%
+    }
+
+    .planning-card {
+        width: 90%;
+        
+    }
+
+   
+
+}
+
+  
+
+   
+
+// foooteer
+
+   footer {
+       font-size: .8rem;
+
+       .play-stores {
+           top: 2px;
+       }
+
+       .play-stores .play-stores-grid  {
+           grid-template-columns: 120px 120px;
+
+           .store-logo-1 img {
+               width: 120px;
+
+           }
+
+           .store-logo-2 img {
+               width: 120px;
+
+           }
+       }
+
+       .extra-info {
+           top: 38px;
+           div {
+               font-size: .8rem;
+           }
+         div .l {
+             font-size: .9rem;
+         }
+       }
+
+       .footer-image {
+           bottom: -40px;
+       }
+
+   }
+
+   
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    /////// header 
+
+    header {
+
+        .logo a {
+            font-size: 1.3rem;
+        }
+        nav {
+            display: none;
+        }
+
+        .menu-logo {
+            display: block;
+            
+        }
+
+    }
+
+    // planning section 
+#planning-section {
+
+    .col {
+        display: block;
+        width: 100%;
+        float: none;
+        margin:  0 0 20px 0;
+    }
+
+    .planning-card {
+        width: 90%;
+        height: 550px;
+    }
+
+}
+
+
+    // mobil nav 
+    #mobil-nav  {
+
+        .inside {
+            .logo {
+                position: relative;
+                padding: 50px 0 0 0;
+                top: -22px;
+                .fa {
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+
+    }
+
+
+
+    // ////// footer 
+
+    footer {
+        font-size: .7rem;
+
+        .play-stores {
+            top: 2px;
+        }
+
+        .play-stores .play-stores-grid  {
+            grid-template-columns: 100px 100px;
+
+            .store-logo-1 img {
+                width: 100px;
+
+            }
+
+            .store-logo-2 img {
+                width: 100px;
+
+            }
+        }
+
+        .extra-info {
+            top: 20px;
+            div {
+                font-size: .5rem;
+            }
+          div .l {
+              font-size: .8rem;
+          }
+        }
+
+        .footer-image {
+            bottom: -20px;
+        }
+
+    }
+
+  
+ 
+   
+}
+

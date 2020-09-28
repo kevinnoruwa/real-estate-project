@@ -10,6 +10,7 @@ import  './sass/app.scss';
 import allReducers from './reducers/allreducers.js'
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
+import MobilNav from './components/mobilNav.js'
 
 class App extends React.Component {
   constructor(){
@@ -274,6 +275,7 @@ class App extends React.Component {
            <Filter Change = {this.change} globalState= {this.state} poulateAction= {this.populateForms} />
            <Listings changeView = {this.changeView} data = {this.state.filteredData} Change = {this.change}   globalState= {this.state} />
          </section>
+      <MobilNav />
       <Footer />
       </div>
     )

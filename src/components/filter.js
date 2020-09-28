@@ -110,33 +110,33 @@ class Filter extends React.Component {
                 </div> 
                 <div  onChange={this.props.Change} className="extras filters">
                     <span className="title">Extras</span>
-                    <label htmlFor="Elevator" > 
-                        <span>Elevators</span> 
+                    <div className='label-container group'> 
+                        <div className='label-name'>Elevators</div> 
                         <input name="Elevator" type="checkbox"  onChange={this.props.Change}/> 
-                    </label>
-                    <label htmlFor="swimming_pool" > 
-                        <span>Swimming pool</span> 
+                    </div>
+                    <div  className='label-container group' > 
+                        <div className='label-name'>Swimming pool</div> 
                         <input name="swimming_pool" type="checkbox"  onChange={this.props.Change}/> 
-                    </label>
-                    <label htmlFor="finished_basement" > 
-                        <span>Finished basement</span> 
+                    </div>
+                    <div  className='label-container group' > 
+                        <div className='label-name'>Finished basement</div> 
                         <input name="finished_basement" type="checkbox"  onChange={this.props.Change}/> 
-                    </label>
-                    <label htmlFor="Gym" > 
-                        <span>Gym</span> 
+                    </div>
+                    <div  className='label-container group'  > 
+                        <div className='label-name'>Gym</div> 
                         <input  name="Gym" type="checkbox" onChange={this.props.Change}/> 
-                    </label>
+                    </div>
                 </div>   
-                <div className='border'></div>
-                <div className='border'></div>
-                <div className='border'></div>
-                <div className='border'></div>
-                <div className='border'></div>
-                <div className='border'></div>
-                <div className='border'></div>
-                <div className='border'></div>
-                <div className='border'></div>
-                <div className='border'></div>
+                <div className='border-design'></div>
+                <div className='border-design'></div>
+                <div className='border-design'></div>
+                <div className='border-design'></div>
+                <div className='border-design'></div>
+                <div className='border-design'></div>
+                <div className='border-design'></div>
+                <div className='border-design'></div>
+                <div className='border-design'></div>
+                <div className='border-design'></div>
               </div>  
             
           </section>

@@ -148,7 +148,7 @@ class Listings extends React.Component {
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
-                <li>5</li>
+               
                 <li>Next</li>
               </ul>
             </section>
@@ -161,7 +161,7 @@ class Listings extends React.Component {
   }
 
   const mapStateToProps = (state) => {
-    console.log(state)
+    
     return state
   }
   

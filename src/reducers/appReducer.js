@@ -1,6 +1,7 @@
 const intialState =  {
     showHouse: false,
     closeHouse: true,
+    openMenu: false,
     house: {},
 }
 let newState;
@@ -22,6 +23,24 @@ let newState;
     
                 })
           
+            return newState
+            break;
+        case 'OPEN_MENU':
+                newState = Object.assign({}, state, {
+                   openMenu: true
+                    
+    
+                })
+               
+           
+            return newState
+            break;
+        case 'CLOSE_MENU':
+                newState = Object.assign({}, state, {
+                    openMenu: false
+    
+                })
+               
             return newState
             break;
         default:
