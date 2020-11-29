@@ -22,10 +22,10 @@ class Header extends React.Component {
              
               </div>
             <nav>
-                <a href="localhost:300">Create ads</a>
-                <a href="localhost:300">About us</a>
-                <a href="localhost:300">Log in</a>
-                <a href="localhost:300" className="register-btn">Register</a>
+                <a href="">Create ads</a>
+                <a href="">About us</a>
+                <a href="">Log in</a>
+                <a href="" className="register-btn">Register</a>
             </nav>
           <div onClick={this.props.openMenu} className='menu-logo'>
             <i className='fa fa-bars' aria-hidden='true'></i>
