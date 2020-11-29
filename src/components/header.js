@@ -14,7 +14,7 @@ class Header extends React.Component {
       return (
         <header className="group">
             <div className="logo">
-              <a href="http://127.0.0.1:5500/public/home.html"> 
+              <a href="/public/home.html"> 
               Ready Homes
               <i className="fa fa-key" aria-hidden="true"></i>
 

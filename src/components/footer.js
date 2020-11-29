@@ -16,10 +16,10 @@ class Footer extends React.Component {
                 <div className='play-stores'>
                     <div className='play-stores-grid'>
                         <div className='store-logo-1'>
-                            <img src='https://i.postimg.cc/Wz0K4YGQ/app-store-img.png'/>
+                            <img alt="" src='https://i.postimg.cc/Wz0K4YGQ/app-store-img.png'/>
                         </div>
                         <div className='store-logo-2'>
-                            <img src='https://i.postimg.cc/prQGvhxv/google-play-store-img.png'/>
+                            <img alt="" src='https://i.postimg.cc/prQGvhxv/google-play-store-img.png'/>
                         </div>
                     </div>
                 </div>
@@ -38,8 +38,8 @@ class Footer extends React.Component {
                     </div>
                 </div>
                 <div className='group footer-image'>
-                    <img src='https://i.postimg.cc/Qtbn7K9M/city-vector-image.png'/>
-                    <img src='https://i.postimg.cc/Qtbn7K9M/city-vector-image.png'/>
+                    <img alt="" src='https://i.postimg.cc/Qtbn7K9M/city-vector-image.png'/>
+                    <img alt="" src='https://i.postimg.cc/Qtbn7K9M/city-vector-image.png'/>
                 </div>
             </footer>
           

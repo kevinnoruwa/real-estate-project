@@ -19,6 +19,7 @@ class Filter extends React.Component {
  
     componentDidMount(){
         this.props.poulateAction()
+        console.log(this.props.globalState.min_price)
        
     }
 

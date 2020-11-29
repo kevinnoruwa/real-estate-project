@@ -19,10 +19,12 @@
         bedrooms: 4,
         bathrooms: 2,
         image: 'https://i.postimg.cc/VvNHLYRT/home-3.jpg',
+        
         extras: [
             'Gym',
             '',
-            'finished_basement'
+            'finished_basement',
+            ''
     ],
     description: `Classic late 1950's one story home reinvented on a quiet street in the highly desirable inner loop neighborhood of Lazybrook. Conveniently located near the Historic Heights, Galleria, Memorial Park, and Downtown. This home features a fourth bedroom that can be converted into a study or game room. `
 
@@ -43,7 +45,9 @@
         image:"https://i.postimg.cc/ZYLNF8cJ/home-4.jpg",
         extras: [
             'Gym',
-            'swimming_pool'
+            'swimming_pool',
+            '',
+            ''
             
             
            
@@ -93,7 +97,10 @@
             bathrooms: 1,
             image:"https://i.postimg.cc/k5sK57zx/apartment-2.jpg",
             extras: [
-               
+               '',
+               '',
+               '',
+               ''
         ],
         description: `Affordable living , close to entertainment, dining, shopping, and more plus it's 7 minutes from the train station.`
         
@@ -101,6 +108,7 @@
        },
 
        {
+        page: 2,
         name: `John Doe `,
         homeType: 'House',
         address: '172 Sea King St',
@@ -112,6 +120,10 @@
         bathrooms: 2,
         image:"https://i.postimg.cc/W3cCswRD/home-5.jpg",
         extras: [
+            '',
+            '',
+            '',
+            ''
             
             
     ],
@@ -119,6 +131,7 @@
    },
 
    {
+    page: 2,
     name: `Billy Salazar `,
     homeType: 'House',
     address: '12635 Julington Oaks Dr',
@@ -131,12 +144,16 @@
     image:"https://i.postimg.cc/vTm9pCmG/house-6.jpg",
     extras: [
         '',
-        'swimming_pool'
+        'swimming_pool',
+        '',
+        '',
+        
 ],
 description: `This beautiful home is now available in Julington Oaks! An open foyer leads you into the spacious living and dining rooms with new porcelain tile accented with a hand-thrown Spanish tile inset. Continue through the home to the impressive 2 story family room and kitchen area filled with immense natural light. The kitchen features quartz countertops, California island with sink, SS appliances, and gorgeous lighting.`
 },
 
 {
+    page: 2,
     name: `Billy Salazar `,
     homeType: 'House',
     address: '8881 Evan Ct',
@@ -150,6 +167,8 @@ description: `This beautiful home is now available in Julington Oaks! An open fo
     extras: [
        '',
        'swimming_pool',
+       '',
+       ''
 
 ],
 description: `Quiet cul-de-sac location on a one street neighborhood in desirable Springboro. Extensive remodel in 2005 opened the floor plan and updated the home throughout. Home boasts a private back yard with large deck and pool.  Home is for sale as a 12-month lease/purchase.`
@@ -168,6 +187,8 @@ description: `Quiet cul-de-sac location on a one street neighborhood in desirabl
     extras: [
        '',
        'swimming_pool',
+       '',
+       ''
 
 ],
 description: `Beautiful 2 story home with several details throughout!. The formal dining room features crown moulding, wainscoting, trey ceiling and decorators paint. The 2 story family room has a cozy stone fireplace which opens to the kitchen. There are hardwood floors in all of the main areas. Upstairs has a large bonus room 2 bedrooms and a shared bath. Enjoy your fall evenings on the screened in porch.`
@@ -186,7 +207,8 @@ description: `Beautiful 2 story home with several details throughout!. The forma
     extras: [
         '',
         '',
-        'finished_basement'
+        'finished_basement',
+        ''
      
 
 ],

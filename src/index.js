@@ -23,7 +23,7 @@ class App extends React.Component {
       max_price: 10000000,
       filteredData: data,
       min_floor_space: 0,
-      min_price:     0,    
+      min_price:   0 ,
       State: 'All',
       HomeType: 'All',
       bedrooms: 0,
@@ -33,6 +33,7 @@ class App extends React.Component {
       view: 'box',
       search: '',
       Gym: false,
+      Elevator: false,
 
   
       
@@ -58,15 +59,21 @@ class App extends React.Component {
 
   }
 
+
+ 
+
+
+  
+
   change(event){
-    const value =(event.target.type == "checkbox")? event.target.checked : event.target.value
+    const value =(event.target.type === "checkbox")? event.target.checked : event.target.value
     const name = event.target.name
 
     this.setState({
       [name] : value
 
     }, () => {
-      // console.log(this.state)
+      console.log(this.state)
       this.filteredData()
      
      
@@ -169,6 +176,18 @@ class App extends React.Component {
     if(this.state.finished_basement === true){
       newData = newData.filter((item) => {
         return item.extras[2] == 'finished_basement'
+       
+
+      })
+
+     
+    }
+
+    
+    if(this.state.Elevator == true){
+      newData = newData.filter((item) => {
+        // console.log(item.extras[3] == 'Elevator')
+        return item.extras[3] == 'Elevator'
        
 
       })

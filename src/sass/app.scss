@@ -11,6 +11,9 @@
     padding: 0;
     margin: 0
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Roboto', sans-serif;
    
@@ -353,6 +356,7 @@ a.register-btn {
     cursor: pointer;
     color: #fff;
     padding: 15px;
+   
     &:hover {
         .details {
             opacity: 1;
@@ -641,6 +645,7 @@ footer {
     padding: 60px 50px 0px 50px;
     background: $green;
     position: relative;
+    margin-top: auto;
     overflow: hidden;
     color: white;
     
@@ -866,50 +871,54 @@ footer {
        }   
 
    }
+   #content-area {
 
-   // filter 
+    
+    // filter 
 
-   #filter {
-      width: 40%;
-      height: 100%;
-       left: 0;
-       bottom: 0;
-       position: absolute;
-       overflow: hidden;
-       top:0;
-   }
-// listings 
-   #listings {
-       width: 60%;
-       float: right;
-       
-       .col-md-3 {
-        
-           width: 50%;
-       }
+        #filter {
+            width: 40%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            overflow: hidden;
+            top:0;
+        }
+        // listings 
+        #listings {
+            width: 60%;
+            float: right;
+            
+            .col-md-3 {
+                
+                width: 50%;
+            }
 
-       .pagination {
-           width: 100%;
-           
+            .pagination {
+                width: 100%;
+                
 
-         
-           .pages {
-               li {
-                   padding: 20px 25px;
-               }
+                
+                .pages {
+                    li {
+                        padding: 20px 25px;
+                    }
 
 
 
-               
-           }
-       }
+                    
+                }
+            }
 
-   }
+        }
+    } // end of content area 
+
 // foooteer
 
    footer {
        font-size: .8rem;
-
+       margin-top: auto;
        .play-stores {
            top: 2px;
        }
@@ -967,143 +976,147 @@ footer {
 
     }
 
+    #content-area {
+        
+       
+
     /////////// filter 
 
 
-    #filter {
-        width: 40%;
-       height: 100%;
-        left: 0;
-        bottom: 0;
-        position: absolute;
-        overflow: hidden;
-        top:0;
-    
+        #filter {
+            width: 40%;
+        height: 100%;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            overflow: hidden;
+            top:0;
+        
 
-        .inside {
-            
-            h4 {
-
-                font-size: 1.2rem;
-    
-            }
-            .label {
-                font-size: 1.1rem;
-                      
-
-            }
-
-            select  {
-                padding: 7px;
-               
-            }
-
-            .label-container .label-name {
-                font-size: 1rem;
-            }
-
-        }
-
-        .title {
-            font-size: 1.1rem;
-
-        }
-    }
-
-  
-    
-
- 
-
-    /////// listings  
-
-    #listings {
-        float: right;
-        width: 60%;
-        .search-area input[type="text"]  {
-            width: 70%;
-         
-
-        }
-
-        .fa {
-            font-size: 1.2rem;
-        }
-
-        .sortby-area .results {
-            float: none;
-            font-size: .9rem;
-            color: #ADA8AA;
-            text-align: center;
-            display: block;
-            margin:  0 0 20px 0;
-        }
-
-        .sort-options {
-           float: none;
-           margin:  7px 0 0 0;
-           display: block;
-           text-align: center ;
-           .fa {
-               display: none;
-           }
-
-           select {
-               padding: 13px 13px;
-           }
-        }
-
-        .col-md-3 {
-            display: block;
-            vertical-align: top;
-            padding: 15px;
-           width: 100%;
-        }
-
-        .pagination {
-            width: 100%;
-            border-radius: none !important;
-
-          
-            .pages {
+            .inside {
                 
-                height: 100%;
-                width: 100%;
+                h4 {
+
+                    font-size: 1.2rem;
+        
+                }
+                .label {
+                    font-size: 1.1rem;
+                        
+
+                }
+
+                select  {
+                    padding: 7px;
+                
+                }
+
+                .label-container .label-name {
+                    font-size: 1rem;
+                }
+
+            }
+
+            .title {
+                font-size: 1.1rem;
+
+            }
+        }
+
+    
+        
+
+    
+
+        /////// listings  
+
+        #listings {
+            float: right;
+            width: 60%;
+            .search-area input[type="text"]  {
+                width: 70%;
+            
+
+            }
+
+            .fa {
                 font-size: 1.2rem;
-                // padding: 3px;
-                border-radius: none;
+            }
+
+            .sortby-area .results {
+                float: none;
+                font-size: .9rem;
+                color: #ADA8AA;
+                text-align: center;
+                display: block;
+                margin:  0 0 20px 0;
+            }
+
+            .sort-options {
+            float: none;
+            margin:  7px 0 0 0;
+            display: block;
+            text-align: center ;
+            .fa {
+                display: none;
+            }
+
+            select {
+                padding: 13px 13px;
+            }
+            }
+
+            .col-md-3 {
+                display: block;
+                vertical-align: top;
+                padding: 15px;
+            width: 100%;
+            }
+
+            .pagination {
+                width: 100%;
                 border-radius: none !important;
 
-                li {
-                    padding: 8px 13px;
-   
+            
+                .pages {
+                    
+                    height: 100%;
+                    width: 100%;
+                    font-size: 1.2rem;
+                    // padding: 3px;
+                    border-radius: none;
+                    border-radius: none !important;
+
+                    li {
+                        padding: 8px 13px;
     
-                }
-                .active {
-                  background-color: transparent;
-                  color: $darkgrey;
-                  border-bottom: solid 2px $pink;
-                   
-                }
+        
+                    }
+                    .active {
+                    background-color: transparent;
+                    color: $darkgrey;
+                    border-bottom: solid 2px $pink;
+                    
+                    }
 
-                li:last-child {
-                    display: none !important;
-  
-       
-                }
-                li:first-child {
-                    display: none !important;
-     
-       
-                }
+                    li:last-child {
+                        display: none !important;
+    
+        
+                    }
+                    li:first-child {
+                        display: none !important;
+        
+        
+                    }
 
 
-                
+                    
+                }
             }
+    
         }
-   
-    }
-
+    }         //end of cont area
     // modal
 
     #modal-section {
@@ -1177,6 +1190,8 @@ footer {
 
     footer {
         font-size: .7rem;
+        margin-top: auto;
+      
 
         .play-stores {
             top: 2px;
@@ -1225,8 +1240,3 @@ footer {
 
 
 
-
-@media only screen and (min-width: 1300px) {
-  
-
-}

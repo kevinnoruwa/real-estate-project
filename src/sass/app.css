@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -552,6 +556,7 @@ footer {
   padding: 60px 50px 0px 50px;
   background: #74B6B4;
   position: relative;
+  margin-top: auto;
   overflow: hidden;
   color: white;
 }
@@ -727,7 +732,7 @@ footer .footer-image img {
   header .logo a {
     font-size: 1.4rem;
   }
-  #filter {
+  #content-area #filter {
     width: 40%;
     height: 100%;
     left: 0;
@@ -736,21 +741,22 @@ footer .footer-image img {
     overflow: hidden;
     top: 0;
   }
-  #listings {
+  #content-area #listings {
     width: 60%;
     float: right;
   }
-  #listings .col-md-3 {
+  #content-area #listings .col-md-3 {
     width: 50%;
   }
-  #listings .pagination {
+  #content-area #listings .pagination {
     width: 100%;
   }
-  #listings .pagination .pages li {
+  #content-area #listings .pagination .pages li {
     padding: 20px 25px;
   }
   footer {
     font-size: .8rem;
+    margin-top: auto;
   }
   footer .play-stores {
     top: 2px;
@@ -789,7 +795,7 @@ footer .footer-image img {
   header .menu-logo {
     display: block;
   }
-  #filter {
+  #content-area #filter {
     width: 40%;
     height: 100%;
     left: 0;
@@ -798,32 +804,32 @@ footer .footer-image img {
     overflow: hidden;
     top: 0;
   }
-  #filter .inside h4 {
+  #content-area #filter .inside h4 {
     font-size: 1.2rem;
   }
-  #filter .inside .label {
+  #content-area #filter .inside .label {
     font-size: 1.1rem;
   }
-  #filter .inside select {
+  #content-area #filter .inside select {
     padding: 7px;
   }
-  #filter .inside .label-container .label-name {
+  #content-area #filter .inside .label-container .label-name {
     font-size: 1rem;
   }
-  #filter .title {
+  #content-area #filter .title {
     font-size: 1.1rem;
   }
-  #listings {
+  #content-area #listings {
     float: right;
     width: 60%;
   }
-  #listings .search-area input[type="text"] {
+  #content-area #listings .search-area input[type="text"] {
     width: 70%;
   }
-  #listings .fa {
+  #content-area #listings .fa {
     font-size: 1.2rem;
   }
-  #listings .sortby-area .results {
+  #content-area #listings .sortby-area .results {
     float: none;
     font-size: .9rem;
     color: #ADA8AA;
@@ -831,47 +837,47 @@ footer .footer-image img {
     display: block;
     margin: 0 0 20px 0;
   }
-  #listings .sort-options {
+  #content-area #listings .sort-options {
     float: none;
     margin: 7px 0 0 0;
     display: block;
     text-align: center;
   }
-  #listings .sort-options .fa {
+  #content-area #listings .sort-options .fa {
     display: none;
   }
-  #listings .sort-options select {
+  #content-area #listings .sort-options select {
     padding: 13px 13px;
   }
-  #listings .col-md-3 {
+  #content-area #listings .col-md-3 {
     display: block;
     vertical-align: top;
     padding: 15px;
     width: 100%;
   }
-  #listings .pagination {
+  #content-area #listings .pagination {
     width: 100%;
     border-radius: none !important;
   }
-  #listings .pagination .pages {
+  #content-area #listings .pagination .pages {
     height: 100%;
     width: 100%;
     font-size: 1.2rem;
     border-radius: none;
     border-radius: none !important;
   }
-  #listings .pagination .pages li {
+  #content-area #listings .pagination .pages li {
     padding: 8px 13px;
   }
-  #listings .pagination .pages .active {
+  #content-area #listings .pagination .pages .active {
     background-color: transparent;
     color: #ADA8AA;
     border-bottom: solid 2px #ff718e;
   }
-  #listings .pagination .pages li:last-child {
+  #content-area #listings .pagination .pages li:last-child {
     display: none !important;
   }
-  #listings .pagination .pages li:first-child {
+  #content-area #listings .pagination .pages li:first-child {
     display: none !important;
   }
   #modal-section .modal {
@@ -914,6 +920,7 @@ footer .footer-image img {
   }
   footer {
     font-size: .7rem;
+    margin-top: auto;
   }
   footer .play-stores {
     top: 2px;
